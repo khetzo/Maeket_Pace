@@ -18,6 +18,9 @@ export default function App() {
     <AdvertisementProvider>
     <NavigationContainer>
     <Stack.Navigator initialRouteName="Splash">
+    
+    <Stack.Screen name="AdminPage" component={AdminPage} options={{ headerShown: false }} />
+
         <Stack.Screen name="Splash" component={SplashScreen} options={{ headerShown: false }} />
         <Stack.Screen name="HomePage" component={HomePage} options={{ headerShown: false }} />
         <Stack.Screen name="LoginPage" component={LoginPage} options={{ headerShown: false }} />
@@ -25,7 +28,6 @@ export default function App() {
         <Stack.Screen name="Notification" component={Notification} options={{ headerShown: false }}/>
         <Stack.Screen name="SetUpPfrofile" component={SetUpPfrofile}  options={{ headerShown: false }}/>
         <Stack.Screen name="NotificationDetail" component={NotificationDetail}  options={{ headerShown: false }}/>
-
     </Stack.Navigator>
 </NavigationContainer>
 </AdvertisementProvider>

@@ -20,7 +20,7 @@ const AdminPage = () => {
   const database = getDatabase();
 
   useEffect(() => {
-    const userRef = ref(database, 'Users'); // Adjust the reference path based on your Firebase structure
+    const userRef = ref(database,  `Users/${userId}`); // Adjust the reference path 
     const usersListener = onValue(userRef, (snapshot) => {
       const usersData = snapshot.val();
       if (usersData) {
